@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+body{
+    margin: 0px;
+}
+.logo{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    /* border: 2px solid black; */
+    background-image: url(./Images/DC_Wallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.joker{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    /* border: 2px solid black; */
+    background-image: url(./Images/joker.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: space-around;
+}
+.joker .intro{
+    text-align: center;
+    display: flex;
+    height: 80vh;
+    width: 45vw;
+    /* border: 2px solid black; */
+    overflow: hidden;
+    background-color: rgba(255, 0, 0, 0);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 100px;
+}
+.joker .line{
+    font-family:'Creepster', cursive;
+    font-size: 7vh;
+}
+.joker .character{
+    display: flex;
+    height: 80vh;
+    width: 45vw;
+    /* border: 2px solid black; */
+    background-image: url(./Images/1017440-removebg.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+    border-radius: 100px;
+}
+.batman{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    /* border: 2px solid black; */
+    background-image: url(./Images/batman.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.batman .intro{
+    text-align: center;
+    display: flex;
+    height: 80vh;
+    width: 45vw;
+    /* border: 2px solid black; */
+    overflow: hidden;
+    background-color: rgba(255, 0, 0, 0);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 100px;
+}
+.batman .character{
+    display: flex;
+    height: 80vh;
+    width: 45vw;
+    /* border: 2px solid black; */
+    background-image: url(./Images/batman_character.png);
+    background-size: cover;
+    background-position:0px 0px;
+    margin-bottom: 50px;
+}
+.batman .line{
+    font-family: 'Russo One', sans-serif;
+    font-size: 7vh;
+    color:whitesmoke;
+    font-weight: 600;
+    text-shadow: 
+    2px 2px 0 #000,  /* Right shadow */
+   -2px -2px 0 #000,  /* Left shadow */
+    2px -2px 0 #000,  /* Top shadow */
+   -2px  2px 0 #000;  /* Bottom shadow */
+}
+.superman{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    /* border: 2px solid black; */
+    background-image: url(./Images/superman.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.superman .intro{
+    text-align: center;
+    display: flex;
+    height: 80vh;
+    width: 45vw;
+    /* border: 2px solid black; */
+    overflow: hidden;
+    background-color: rgba(255, 0, 0, 0);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 100px;
+    margin-top: 50px;
+}
+.superman .character{
+    display: flex;
+    height: 80vh;
+    width: 45vw;
+    /* border: 2px solid black; */
+    background-image: url(./Images/superman_character.png);
+    background-size: cover;
+    background-position:center;
+    margin-bottom: 50px;
+    border-radius: 100px;
+}
+.superman .line{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 7vh;
+    color: #FFD700; 
+    text-shadow: 2px 2px 4px #1E90FF; 
+}
+.deadPool{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    /* border: 2px solid black; */
+    background-image: url(./Images/deadpool.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.deadPool .intro{
+    text-align: center;
+    display: flex;
+    height: 80vh;
+    width: 45vw;
+    /* border: 2px solid black; */
+    overflow: hidden;
+    background-color: rgba(255, 0, 0, 0);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 100px;
+    margin-top: 50px;
+}
+.deadPool .character{
+    display: flex;
+    height: 80vh;
+    width: 45vw;
+    /* border: 2px solid black; */
+    background-image: url(./Images/deadpool_character-Photoroom.png);
+    background-size: cover;
+    background-position:10px 50px;
+    margin-bottom: 50px;
+    border-radius: 100px;
+    background-repeat: no-repeat;
+}
+.deadPool .line{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 7vh;
+    color: red; 
+    text-shadow: 2px 2px 4px black; 
+}
+
+
+.hiddenintro{
+    opacity: 0;
+    transition: all 1s;
+    transform: translateX(-50%);
+    filter: blur(10px);
+}
+.hiddencharacter{
+    opacity: 0;
+    transition: all 1s;
+    transform: translateY(50%);
+    filter: blur(10px);
+}
+
+.showcharacter{
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0px);
+}
+
+.showintro{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0px);
+}
+
